@@ -1,0 +1,29 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --background: #ffffff;
+  --card-bg: #f1f5f9;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dark-theme {
+  --primary: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --secondary: #1e293b;
+  --text: #f8fafc;
+  --text-light: #94a3b8;
+  --background: #0f172a;
+  --card-bg: #1e293b;
+  --shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Existing styles... */

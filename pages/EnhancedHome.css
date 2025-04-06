@@ -1,0 +1,153 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --background: #ffffff;
+  --card-bg: #f1f5f9;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text);
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn.primary:hover {
+  background: var(--secondary);
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.about-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.tools-section {
+  padding: 2rem 0;
+}
+
+.tools-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1024px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tool-card {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.tool-card h3 {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.tool-card p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.tool-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.tool-btn:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

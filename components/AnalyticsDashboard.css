@@ -1,0 +1,85 @@
+/* AnalyticsDashboard.css */
+
+.dashboard-container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    text-align: center;
+  }
+  
+  .dashboard-subtitle {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 2rem;
+  }
+  
+  .summary-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1d4ed8;
+  }
+  
+  .charts-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .chart-box {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .chart-box h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-placeholder {
+    height: 200px;
+    background-color: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
