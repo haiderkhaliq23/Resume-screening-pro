@@ -1,0 +1,99 @@
+/* CandidateScoring.css */
+
+.scoring-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0f2fe, #bfdbfe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .scoring-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .scoring-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .scoring-subtitle {
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .file-input {
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .calculate-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  
+  .calculate-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .score-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .circular-chart {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke: #3b82f6;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  .percentage {
+    fill: #1e3a8a;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0, 100;
+    }
+  }
+  
