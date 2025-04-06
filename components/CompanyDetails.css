@@ -1,0 +1,24 @@
+.company-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.address-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.address-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.address-card p {
+  margin: 0.5rem 0;
+  color: #34495e;
+}
