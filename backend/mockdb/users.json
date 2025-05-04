@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "1",
+    "firstName": "Admin",
+    "lastName": "User",
+    "email": "admin@example.com",
+    "password": "password123",
+    "role": "admin",
+    "company": "Resume Screening Inc",
+    "title": "Administrator"
+  },
+  {
+    "_id": "2",
+    "firstName": "HR",
+    "lastName": "Manager",
+    "email": "hr@example.com",
+    "password": "password123",
+    "role": "hr",
+    "company": "Resume Screening Inc",
+    "title": "HR Manager"
+  },
+  {
+    "_id": "3",
+    "firstName": "John",
+    "lastName": "Applicant",
+    "email": "john@example.com",
+    "password": "password123",
+    "role": "applicant",
+    "title": "Software Developer"
+  }
+]
