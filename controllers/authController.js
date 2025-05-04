@@ -56,11 +56,18 @@ const generateToken = (id) => {
 const loadUsers = () => {
   try {
     if (fs.existsSync(usersFilePath)) {
-      const data = fs.readFileSync(usersFilePath, 'utf8');
-      return JSON.parse(data);
+      try {
+        const data = fs.readFileSync(usersFilePath, 'utf8');
+        return JSON.parse(data);
+      } catch (jsonError) {
+        console.error('Error parsing users JSON:', jsonError);
+        // If JSON is invalid, overwrite with default users
+        fs.writeFileSync(usersFilePath, JSON.stringify(initMockUsers, null, 2), 'utf8');
+        return [...initMockUsers];
+      }
     }
     // If file doesn't exist, initialize with mock users and save to file
-    fs.writeFileSync(usersFilePath, JSON.stringify(initMockUsers, null, 2));
+    fs.writeFileSync(usersFilePath, JSON.stringify(initMockUsers, null, 2), 'utf8');
     return [...initMockUsers];
   } catch (error) {
     console.error('Error loading users:', error);
@@ -71,7 +78,7 @@ const loadUsers = () => {
 // Save users to file
 const saveUsers = (users) => {
   try {
-    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2), 'utf8');
     console.log('Users saved successfully to:', usersFilePath);
     return true;
   } catch (error) {
